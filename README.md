@@ -36,6 +36,25 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000). You should land in **STUDIO** with **`[STUDIO: FREE MODE]`** in the masthead.
 
+### Use on your phone (same Wi‑Fi as your PC)
+
+`localhost` only works on the computer running the app. On your phone, use your PC’s network address:
+
+1. On the PC, in PowerShell (with Node/fnm working):
+
+   ```powershell
+   cd C:\Users\USER\Projects\ghostline
+   npm run dev:phone
+   ```
+
+2. Find your PC’s IP: run `ipconfig` and look for **IPv4 Address** under Wi‑Fi (e.g. `192.168.1.42`).
+
+3. On your phone (same Wi‑Fi, not mobile data), open **`http://192.168.1.42:3000`** (use your IP).
+
+4. If it doesn’t load, allow **Node** through Windows Firewall when prompted, or try temporarily turning off the firewall to test.
+
+This is for trying the app at home — not a public link for the whole internet. For that you’d deploy (e.g. Vercel) later.
+
 ## Free mode (no API) — what to do
 
 1. Click a **seed voice** (`@hasu`, `@cobie`, `@CryptoHayes`, `@6529`, `@loomdart`).
