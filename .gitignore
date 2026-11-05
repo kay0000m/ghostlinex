@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.vinxi
+.output
+.nitro
+.DS_Store
+Thumbs.db
+*.log
+.cursor
